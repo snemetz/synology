@@ -67,12 +67,22 @@ http://my.hdhomerun.com/api/recording_rules?DeviceAuth={auth code from discover}
 
 #### Channel Lineup
 - http://{device ip}/lineup.json
-- http://{device ip}/lineup.html
 - http://{device ip}/lineup.xml
 
 #### Record (Download stream)
 - wget http://{device ip}:5004/auto/v<channel number>?duration=14400
 - Duration is seconds
+
+#### Web Pages
+- Home Page: http://{device ip}/
+- CableCard Menu: http://{device ip}/cc.html
+- Channel Lineup: http://{device ip}/lineup.html
+- Tuner Resolver Menu: http://{device ip}/tr.html
+- Tuner Status Summary: http://{device ip}/tuners.html
+- Tuner 0 Status: http://{device ip}/tuners.html?page=tuner0
+- System Status: http://{device ip}/system.html
+- System Log: http://{device ip}/log.html
+
 
 ---
 ## References:
