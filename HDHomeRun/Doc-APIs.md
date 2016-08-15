@@ -44,6 +44,7 @@ http://my.hdhomerun.com/api/recording_rules?DeviceAuth={auth code from discover}
 - /dvr/
  - fixup
  - register
+
 ---
 ### DVR Engine API
 #### Discovery
@@ -51,7 +52,8 @@ http://my.hdhomerun.com/api/recording_rules?DeviceAuth={auth code from discover}
 - Example: ```http://192.168.1.174:34182/discover.json```
 - How to find the port?
 - Returns:
-```{"FriendlyName":"HDHomeRun RECORD","Version":"20160321atest1","BaseURL":"http://192.168.1.174:34182","StorageURL":"http://192.168.1.174:34182/recorded_files.json","FreeSpace":645576847360}
+```
+{"FriendlyName":"HDHomeRun RECORD","Version":"20160321atest1","BaseURL":"http://192.168.1.174:34182","StorageURL":"http://192.168.1.174:34182/recorded_files.json","FreeSpace":645576847360}
 ```
 
 ---
@@ -59,7 +61,8 @@ http://my.hdhomerun.com/api/recording_rules?DeviceAuth={auth code from discover}
 #### Discovery
 - http://{device ip}/discover.json
 - Returns:
-``` {"FriendlyName":"HDHomeRun PRIME","ModelNumber":"HDHR3-CC","FirmwareName":"hdhomerun3_cablecard","FirmwareVersion":"20160630atest2","DeviceID":"FFFFFFFF","DeviceAuth":"FFFFFFFF","TunerCount":3,"ConditionalAccess":1,"BaseURL":"http://192.168.1.182:80","LineupURL":"http://192.168.1.182:80/lineup.json"}
+```
+{"FriendlyName":"HDHomeRun PRIME","ModelNumber":"HDHR3-CC","FirmwareName":"hdhomerun3_cablecard","FirmwareVersion":"20160630atest2","DeviceID":"FFFFFFFF","DeviceAuth":"FFFFFFFF","TunerCount":3,"ConditionalAccess":1,"BaseURL":"http://192.168.1.182:80","LineupURL":"http://192.168.1.182:80/lineup.json"}
 ```
 
 #### Channel Lineup
