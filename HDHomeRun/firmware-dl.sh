@@ -13,7 +13,8 @@
 #
 #Notes:
 #  Via Web
-#    Get devices and IPs in json: http://my.hdhomerun.com/devices
+#    Get devices and IPs in json:
+#      http://my.hdhomerun.com/devices
 #      Fields: device_id, local_ip
 #    Get firmware version
 #      http://<local ip>/discover.json
@@ -24,5 +25,6 @@
 #      hdhomerun_config discover
 #    Get firmware version:
 #      hdhomerun_config <device ID> get /sys/version
+#    Check if device is idle
 #    Upgrade firmware:
 #      hdhomerun_config <device ID> upgrade <firmware file>
