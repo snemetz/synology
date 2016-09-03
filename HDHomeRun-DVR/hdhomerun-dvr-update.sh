@@ -89,13 +89,14 @@ else
   #  jq ".[$index].DiscoverURL" discover.json
   #done
   # Is DVR going to start recording in less than X minutes?
-  if [ "UpgradeOK" -ne 1 ]; then
+  if [ "$UpgradeOK" -ne 1 ]; then
     echo "Existing version (${VersionCurrent}) will be upgraded to the downloaded version ($VersionNew)"
     $EXE stop --conf ${ConfigFile}
     mv $EXETMP $EXE
     chmod +rx $EXE
     $EXE start --conf ${ConfigFile}
     cp $EXE ${DirArchive}/${FileNew}
+    $EXE version
   else
     echo "Existing version (${VersionCurrent}) should get upgraded to the downloaded version ($VersionNew)"
     echo "System NOT ready for upgrade! Not upgrading"
