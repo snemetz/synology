@@ -8,6 +8,8 @@
 #   hdhomerun_config
 #   jq  https://stedolan.github.io/jq/
 #
+# Author: Steven Nemetz
+#
 #TODO:
 #  How to determine latest version to download
 #  Notify user of upgrade

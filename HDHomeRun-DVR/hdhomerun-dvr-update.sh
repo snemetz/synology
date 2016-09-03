@@ -6,11 +6,12 @@
 # Dependencies:
 #   jq  https://stedolan.github.io/jq/
 #
+# Author: Steven Nemetz
+#
 #Issues:
 #- how to test for required config file changes?
 #- notify user of update
 #- Add script and schedule task
-#- Check that DVR is idle
 
 DirHDHomeRun=/volume1/HDHomeRun
 DirBin=${DirHDHomeRun}/bin
